@@ -24,4 +24,4 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}    
           SLACK_MESSAGE: "ko"
-          SLACK_COLOR: "red"    
+          SLACK_COLOR: "#f44336"    
