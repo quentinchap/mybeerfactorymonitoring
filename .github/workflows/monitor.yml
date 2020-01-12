@@ -23,4 +23,5 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}    
-          SLACK_MESSAGE: "ko"    
+          SLACK_MESSAGE: "ko"
+          SLACK_COLOR: "red"    
