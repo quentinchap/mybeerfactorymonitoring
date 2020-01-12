@@ -29,14 +29,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{baseUrl}}/api/v1.1/count-recipesrrr",
+					"raw": "{{baseUrl}}/api/v1.1/count-recipes",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"api",
 						"v1.1",
-						"count-recipesfff"
+						"count-recipes"
 					]
 				}
 			},
