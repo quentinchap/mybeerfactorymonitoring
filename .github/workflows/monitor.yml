@@ -14,7 +14,13 @@ jobs:
           environment: postman_environment.json
       - name: Success
         if: success()
-        run: echo "ok"
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_MESSAGE: "ok"
       - name: Error
         if: failure()
-        run: echo "Error"          
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}    
+          SLACK_MESSAGE: "ko"    
