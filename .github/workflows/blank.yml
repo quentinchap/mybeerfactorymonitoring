@@ -1,0 +1,16 @@
+name: Monito
+on:
+  schedule:
+    - cron: "30 * * * *"
+
+jobs:
+  check_indus:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: matt-ball/newman-action@master
+        with:
+          collection: postman_collection.json
+          environment: postman_environment.json
