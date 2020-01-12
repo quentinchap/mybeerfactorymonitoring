@@ -29,7 +29,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{baseUrl}}/api/v1.1/count-recipes",
+					"raw": "{{baseUrl}}/api/v1.1/count-recipesrrr",
 					"host": [
 						"{{baseUrl}}"
 					],
