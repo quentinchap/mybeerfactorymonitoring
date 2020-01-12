@@ -1,7 +1,7 @@
-name: Monito
+name: Monitoring
 on:
   schedule:
-    - cron: "30 * * * *"
+  - cron: "30 * * * *"
 
 jobs:
   check_indus:
