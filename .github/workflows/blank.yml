@@ -1,7 +1,7 @@
 name: Monitoring
 on:
   schedule:
-  - cron: "1 * * * *"
+  - cron: "* * * * *"
 
 jobs:
   newman:
