@@ -13,4 +13,9 @@ jobs:
           reporters: json
           collection: postman_collection.json
           environment: postman_environment.json
-          
+      - name: Success
+        if: success()
+        run: echo "ok"
+      - name: Error
+        if: failure()
+        run: echo "Error"          
