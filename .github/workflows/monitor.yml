@@ -1,7 +1,9 @@
 name: Monitoring
 on:
-  schedule:
-  - cron: "*/30 * * * *"
+  push:
+    branches: [master]
+ # schedule:
+ # - cron: "*/30 * * * *"
 
 jobs:
   newman:
