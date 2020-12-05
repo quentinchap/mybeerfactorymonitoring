@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: matt-ball/newman-action@master
+      - uses: actions/setup-node@v2-beta
         with:
-          collection: postman_collection.json
-          environment: postman_environment.json
+          node-version: '12'
+          collectionID: 10954437-8cb0d465-dff6-4319-a607-caad24998335
+          environmentID: 98798-a974f882-8ecg0-4c80-9901-a583778393987a
+      - run: npm install -g newman
+      - run: newman run postman_collection.json -e  postman_environment.json
       - name: Error
         if: failure()
         uses: rtCamp/action-slack-notify@master
