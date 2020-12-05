@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0202accd-7fd8-43e0-8e0c-cc3116836e6b",
+		"_postman_id": "c66a365b-2778-4c55-ad4e-54541233d62a",
 		"name": "MonitorBF ",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,10 +11,10 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c56ae1bc-1431-4fd1-8588-d4d34c561a6c",
+						"id": "ae7d0b89-4bde-4fe3-b736-93c28bc336cb",
 						"exec": [
-							"pm.test(\"Status code is 304\", function () {",
-							"    pm.response.to.have.status(304);",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -24,10 +24,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "{{baseUrl}}/api/v1.1/count-recipes",
 					"host": [
@@ -42,5 +38,6 @@
 			},
 			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
